@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== Navigation Bar ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">My Blog</a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="discover-umd.html">Discover UMD</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <header class="hero">
+        <h1>Contact Me</h1>
+        <p>Have a question or want to connect? Feel free to reach out.</p>
+    </header>
+
+    <!-- ========== Main Content ========== -->
+    <main class="main-content">
+
+        <section class="section">
+            <div class="contact-grid">
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>I'd love to hear from you. Whether it's about a project, a question, or just to say hello, don't hesitate to reach out.</p>
+
+                    <div class="info-item">
+                        <span class="icon">&#9993;</span>
+                        <div class="details">
+                            <h4>Email</h4>
+                            <p>student@d.umn.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">&#127891;</span>
+                        <div class="details">
+                            <h4>University</h4>
+                            <p>University of Minnesota Duluth</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">&#128205;</span>
+                        <div class="details">
+                            <h4>Location</h4>
+                            <p>Duluth, Minnesota</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h2>Send a Message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+        <p>Built with HTML &amp; CSS for a UMD course project.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>

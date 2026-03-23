@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog | Discover UMD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== Navigation Bar ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">My Blog</a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="discover-umd.html" class="active">Discover UMD</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <header class="hero">
+        <h1>Discover UMD</h1>
+        <p>Explore what makes the University of Minnesota Duluth a great place to learn and grow.</p>
+    </header>
+
+    <!-- ========== Main Content ========== -->
+    <main class="main-content">
+
+        <!-- Team Marketing Video -->
+        <section class="section">
+            <h2>UMD Marketing Video</h2>
+            <p>Check out our team's 30-second video highlighting what makes UMD and the Duluth area special.</p>
+            <div class="video-container">
+                <!--
+                    Replace "team-video.mp4" with your actual video file.
+                    Place the video file in the same folder or update the path.
+                -->
+                <video controls poster="images/campus.jpg">
+                    <source src="team-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- UMD Highlights -->
+        <section class="section">
+            <h2>Why UMD?</h2>
+            <p>Here are just a few reasons why UMD stands out as a top university in Minnesota.</p>
+            <div class="umd-highlights">
+
+                <div class="highlight-card">
+                    <div class="icon">&#127891;</div>
+                    <h3>Strong Academics</h3>
+                    <p>UMD offers a wide range of degree programs with dedicated faculty who are committed to student success.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="icon">&#127966;</div>
+                    <h3>Beautiful Location</h3>
+                    <p>Nestled along the shores of Lake Superior, the campus offers stunning natural beauty and outdoor recreation year-round.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="icon">&#129309;</div>
+                    <h3>Vibrant Community</h3>
+                    <p>With hundreds of student organizations, events, and activities, there's always something happening on campus.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="icon">&#128640;</div>
+                    <h3>Career Readiness</h3>
+                    <p>From internships to career fairs, UMD provides the resources and connections students need to launch their careers.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Duluth -->
+        <section class="section">
+            <h2>About Duluth</h2>
+            <p>Duluth, Minnesota is a vibrant city located at the western tip of Lake Superior. Known for its scenic beauty, outdoor adventures, and thriving arts scene, Duluth is the perfect college town. From hiking the Superior Hiking Trail to exploring Canal Park, there's always something to discover.</p>
+            <p>The city offers a unique blend of natural beauty and urban amenities, making it an ideal place for students who want the best of both worlds.</p>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+        <p>Built with HTML &amp; CSS for a UMD course project.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>

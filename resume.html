@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog | Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== Navigation Bar ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">My Blog</a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="discover-umd.html">Discover UMD</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <header class="hero">
+        <h1>Resume</h1>
+        <p>My education, experience, and skills at a glance.</p>
+    </header>
+
+    <!-- ========== Main Content ========== -->
+    <main class="main-content">
+
+        <!-- Education -->
+        <section class="section resume-section">
+            <h3>Education</h3>
+            <div class="resume-item">
+                <h4>University of Minnesota Duluth</h4>
+                <p class="meta">Expected Graduation: May 2028</p>
+                <p>Currently pursuing a bachelor's degree with a focus on building strong analytical and technical skills. Maintaining a solid academic record while staying active in campus organizations.</p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section resume-section">
+            <h3>Experience</h3>
+            <div class="resume-item">
+                <h4>Student Assistant</h4>
+                <p class="meta">UMD Campus Office | September 2025 &ndash; Present</p>
+                <ul>
+                    <li>Provided administrative support including scheduling and data entry</li>
+                    <li>Assisted with organizing campus events and meetings</li>
+                    <li>Communicated with students and staff to resolve inquiries</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h4>Retail Associate</h4>
+                <p class="meta">Part-Time | Summer 2025</p>
+                <ul>
+                    <li>Delivered quality customer service in a fast-paced environment</li>
+                    <li>Managed inventory and organized product displays</li>
+                    <li>Trained new team members on store procedures</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section resume-section">
+            <h3>Skills</h3>
+            <div class="skills-list">
+                <span>HTML &amp; CSS</span>
+                <span>Microsoft Office</span>
+                <span>Google Workspace</span>
+                <span>Communication</span>
+                <span>Teamwork</span>
+                <span>Time Management</span>
+                <span>Problem Solving</span>
+                <span>Research</span>
+                <span>Organization</span>
+            </div>
+        </section>
+
+        <!-- Involvement -->
+        <section class="section resume-section">
+            <h3>Campus Involvement</h3>
+            <div class="resume-item">
+                <h4>Student Organization Member</h4>
+                <p class="meta">UMD | 2025 &ndash; Present</p>
+                <p>Active participant in campus clubs and community service events, contributing to team projects and collaborative initiatives.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+        <p>Built with HTML &amp; CSS for a UMD course project.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>
