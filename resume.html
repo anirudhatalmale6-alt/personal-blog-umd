@@ -3,106 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog | Resume</title>
+    <title>Timothy Nelson - Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ========== Navigation Bar ========== -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">My Blog</a>
-            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html" class="active">Resume</a></li>
-                <li><a href="discover-umd.html">Discover UMD</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="index.html" class="site-name">Timothy's Blog</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="discover-umd.html">Discover UMD</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- ========== Hero Section ========== -->
-    <header class="hero">
-        <h1>Timothy Nelson</h1>
-        <p>Education, experience, and skills at a glance.</p>
-    </header>
+    <div class="page-header">
+        <h1>Resume</h1>
+        <p>My education, experience, and skills</p>
+    </div>
 
-    <!-- ========== Main Content ========== -->
-    <main class="main-content">
+    <div class="content">
 
-        <!-- Education -->
-        <section class="section resume-section">
-            <h3>Education</h3>
-            <div class="resume-item">
-                <h4>University of Minnesota Duluth</h4>
-                <p class="meta">Bachelor of Business Administration &mdash; Human Resource Management</p>
-                <p>Developing expertise in people management, organizational behavior, and workplace strategy. Actively building professional skills through coursework and hands-on work experience.</p>
-            </div>
-        </section>
+        <h2>Education</h2>
+        <div class="resume-block">
+            <h4>University of Minnesota Duluth</h4>
+            <p class="meta">Bachelor of Business Administration - Human Resource Management</p>
+            <p>Working toward my degree with a focus on people management and organizational behavior. Building skills through coursework and hands-on experience.</p>
+        </div>
 
-        <!-- Experience -->
-        <section class="section resume-section">
-            <h3>Experience</h3>
-            <div class="resume-item">
-                <h4>Team Member</h4>
-                <p class="meta">Menards</p>
-                <ul>
-                    <li>Provided excellent customer service and assisted guests with product selection</li>
-                    <li>Managed inventory, stocked shelves, and maintained organized displays</li>
-                    <li>Collaborated with team members to meet daily operational goals</li>
-                </ul>
-            </div>
-            <div class="resume-item">
-                <h4>Technician</h4>
-                <p class="meta">Mosquito Squad</p>
-                <ul>
-                    <li>Performed residential and commercial mosquito and tick treatments</li>
-                    <li>Communicated with customers to explain services and address concerns</li>
-                    <li>Managed daily route schedules and maintained equipment</li>
-                </ul>
-            </div>
-        </section>
+        <h2>Work Experience</h2>
+        <div class="resume-block">
+            <h4>Team Member - Menards</h4>
+            <ul>
+                <li>Helped customers find products and answered questions</li>
+                <li>Stocked shelves and kept displays organized</li>
+                <li>Worked with team members to get things done efficiently</li>
+            </ul>
+        </div>
 
-        <!-- Skills -->
-        <section class="section resume-section">
-            <h3>Skills</h3>
-            <div class="skills-list">
-                <span>Customer Service</span>
-                <span>Teamwork</span>
-                <span>Communication</span>
-                <span>Microsoft Office</span>
-                <span>Time Management</span>
-                <span>Problem Solving</span>
-                <span>Organization</span>
-                <span>Leadership</span>
-            </div>
-        </section>
+        <div class="resume-block">
+            <h4>Technician - Mosquito Squad</h4>
+            <ul>
+                <li>Did mosquito and tick treatments for homes and businesses</li>
+                <li>Talked with customers about the services and answered their questions</li>
+                <li>Managed my daily route and took care of equipment</li>
+            </ul>
+        </div>
 
-        <!-- Involvement -->
-        <section class="section resume-section">
-            <h3>Campus Involvement</h3>
-            <div class="resume-item">
-                <h4>Student Organization Member</h4>
-                <p class="meta">UMD | 2025 &ndash; Present</p>
-                <p>Active participant in campus clubs and community service events, contributing to team projects and collaborative initiatives.</p>
-            </div>
-        </section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Customer Service</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Microsoft Office</span>
+            <span>Time Management</span>
+            <span>Problem Solving</span>
+            <span>Organization</span>
+            <span>Leadership</span>
+        </div>
 
-    </main>
+        <br>
 
-    <!-- ========== Footer ========== -->
-    <footer class="footer">
-        <p>&copy; 2026 Timothy Nelson. All rights reserved.</p>
-        <p>Built with HTML &amp; CSS for a UMD course project.</p>
+        <h2>Campus Involvement</h2>
+        <div class="resume-block">
+            <h4>Student Organization Member</h4>
+            <p class="meta">UMD</p>
+            <p>Participate in campus clubs and community service events.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Timothy Nelson | UMD Course Project</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('open');
-        }
-    </script>
 
 </body>
 </html>

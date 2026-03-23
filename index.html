@@ -3,96 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog | Home</title>
-    <!-- External stylesheet for all pages -->
+    <title>Timothy Nelson - Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ========== Navigation Bar ========== -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">My Blog</a>
-            <!-- Hamburger menu button for mobile -->
-            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="discover-umd.html">Discover UMD</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="site-name">Timothy's Blog</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="discover-umd.html">Discover UMD</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- ========== Hero Section ========== -->
-    <header class="hero">
+    <div class="page-header">
         <h1>Welcome to My Blog</h1>
-        <p>Thoughts, ideas, and stories from my journey as a Human Resource Management student at UMD.</p>
-    </header>
+        <p>A Human Resource Management student at UMD sharing thoughts and experiences</p>
+    </div>
 
-    <!-- ========== Main Content ========== -->
-    <main class="main-content">
+    <div class="content">
 
-        <!-- Recent Blog Posts Section -->
-        <section class="section">
-            <h2>Recent Posts</h2>
-            <div class="blog-grid">
+        <h2>Recent Posts</h2>
 
-                <!-- Blog Post 1 -->
-                <article class="blog-card">
-                    <img src="images/campus.jpg" alt="UMD campus in autumn">
-                    <div class="card-body">
-                        <p class="date">March 20, 2026</p>
-                        <h3>My First Semester at UMD</h3>
-                        <p>Reflecting on the experiences, challenges, and memorable moments from my first semester at the University of Minnesota Duluth.</p>
-                    </div>
-                </article>
+        <div class="post">
+            <img src="images/campus.jpg" alt="UMD campus">
+            <span class="date">March 20, 2026</span>
+            <h3>My First Semester at UMD</h3>
+            <p>Reflecting on the experiences, challenges, and memorable moments from my first semester at the University of Minnesota Duluth. It's been a ride so far and I'm excited to see what comes next.</p>
+        </div>
 
-                <!-- Blog Post 2 -->
-                <article class="blog-card">
-                    <img src="images/studying.jpg" alt="Student studying at a desk">
-                    <div class="card-body">
-                        <p class="date">March 15, 2026</p>
-                        <h3>Tips for Staying Organized in College</h3>
-                        <p>A few practical strategies I use to keep track of assignments, deadlines, and everything in between.</p>
-                    </div>
-                </article>
+        <div class="post">
+            <img src="images/studying.jpg" alt="Studying">
+            <span class="date">March 15, 2026</span>
+            <h3>Tips for Staying Organized in College</h3>
+            <p>A few practical strategies I've been using to keep track of assignments, deadlines, and everything else going on. Hope some of these help other students out there too.</p>
+        </div>
 
-                <!-- Blog Post 3 -->
-                <article class="blog-card">
-                    <img src="images/duluth.jpg" alt="Duluth skyline and Lake Superior">
-                    <div class="card-body">
-                        <p class="date">March 10, 2026</p>
-                        <h3>Exploring Duluth: Hidden Gems</h3>
-                        <p>From the lakefront trails to cozy coffee shops, here are some of my favorite spots around Duluth.</p>
-                    </div>
-                </article>
+        <div class="post">
+            <img src="images/duluth.jpg" alt="Duluth skyline">
+            <span class="date">March 10, 2026</span>
+            <h3>Exploring Duluth: Hidden Gems</h3>
+            <p>From the lakefront trails to coffee shops downtown, here are some of my favorite spots around Duluth that I think everyone should check out.</p>
+        </div>
 
-            </div>
-        </section>
+        <h2>About This Blog</h2>
+        <p>This blog is where I write about my experiences as a college student. Whether it's academics, campus life, or just things I find interesting, I hope you enjoy reading. Feel free to check out the other pages and reach out on the <a href="contact.html">Contact</a> page if you want to connect.</p>
 
-        <!-- Brief Introduction -->
-        <section class="section">
-            <h2>About This Blog</h2>
-            <p>This blog is a space where I share my experiences as a college student, write about topics I'm passionate about, and document my growth along the way. Whether it's academics, campus life, or personal reflections, I hope you find something here that resonates with you.</p>
-            <p>Feel free to explore the different pages using the navigation bar above, and don't hesitate to reach out through the <a href="contact.html" style="color: #1a1a1a; font-weight: 600;">Contact</a> page.</p>
-        </section>
+    </div>
 
-    </main>
-
-    <!-- ========== Footer ========== -->
-    <footer class="footer">
-        <p>&copy; 2026 Timothy Nelson. All rights reserved.</p>
-        <p>Built with HTML &amp; CSS for a UMD course project.</p>
+    <footer>
+        <p>&copy; 2026 Timothy Nelson | UMD Course Project</p>
     </footer>
-
-    <!-- Simple script for mobile menu toggle -->
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('open');
-        }
-    </script>
 
 </body>
 </html>

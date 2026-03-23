@@ -3,108 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog | Contact</title>
+    <title>Timothy Nelson - Contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ========== Navigation Bar ========== -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">My Blog</a>
-            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="discover-umd.html">Discover UMD</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="index.html" class="site-name">Timothy's Blog</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="discover-umd.html">Discover UMD</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- ========== Hero Section ========== -->
-    <header class="hero">
-        <h1>Contact Me</h1>
-        <p>Have a question or want to connect? Feel free to reach out.</p>
-    </header>
+    <div class="page-header">
+        <h1>Contact</h1>
+        <p>Get in touch with me</p>
+    </div>
 
-    <!-- ========== Main Content ========== -->
-    <main class="main-content">
+    <div class="content">
 
-        <section class="section">
-            <div class="contact-grid">
+        <h2>Contact Info</h2>
+        <p><strong>Email:</strong> TimNelson2016@icloud.com</p>
+        <p><strong>University:</strong> University of Minnesota Duluth</p>
+        <p><strong>Location:</strong> Duluth, Minnesota</p>
 
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    <p>I'd love to hear from you. Whether it's about a project, a question, or just to say hello, don't hesitate to reach out.</p>
+        <br>
 
-                    <div class="info-item">
-                        <span class="icon">&#9993;</span>
-                        <div class="details">
-                            <h4>Email</h4>
-                            <p>TimNelson2016@icloud.com</p>
-                        </div>
-                    </div>
+        <h2>Send Me a Message</h2>
+        <form class="contact-form" action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
 
-                    <div class="info-item">
-                        <span class="icon">&#127891;</span>
-                        <div class="details">
-                            <h4>University</h4>
-                            <p>University of Minnesota Duluth</p>
-                        </div>
-                    </div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                    <div class="info-item">
-                        <span class="icon">&#128205;</span>
-                        <div class="details">
-                            <h4>Location</h4>
-                            <p>Duluth, Minnesota</p>
-                        </div>
-                    </div>
-                </div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
 
-                <!-- Contact Form -->
-                <div>
-                    <h2>Send a Message</h2>
-                    <form class="contact-form" action="#" method="POST">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your email" required>
-                        </div>
-                        <div>
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        <div>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-                        </div>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
 
-            </div>
-        </section>
+            <button type="submit">Send</button>
+        </form>
 
-    </main>
+    </div>
 
-    <!-- ========== Footer ========== -->
-    <footer class="footer">
-        <p>&copy; 2026 Timothy Nelson. All rights reserved.</p>
-        <p>Built with HTML &amp; CSS for a UMD course project.</p>
+    <footer>
+        <p>&copy; 2026 Timothy Nelson | UMD Course Project</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('open');
-        }
-    </script>
 
 </body>
 </html>
